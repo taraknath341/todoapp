@@ -1,0 +1,27 @@
+body {
+  background-color: lightsalmon;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 15pc;
+  width: 25pc;
+  padding: 1pc;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 1pc;
+}
+
+form input {
+  font-size: 1.5pc;
+  padding: .5pc;
+  margin: .5pc;
+}
+
+.company {
+  margin-left: 15%;
+}
