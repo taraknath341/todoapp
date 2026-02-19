@@ -15,8 +15,12 @@ let db = null;
 // express Satup
 const app = express();
 app.use(express.json());
-app.use(express.static("www"));
-
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/www/index.html");
+})
+app.get("/main", (req, res) => {
+  res.sendFile(__dirname + "/www/main.html");
+})
 app.put("/", async (req, res) => {
   try {
     const { userName } = req.body;
